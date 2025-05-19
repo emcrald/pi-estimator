@@ -1,4 +1,5 @@
 import pycuda.driver as cuda
+import pycuda.autoinit
 import numpy as np
 import time
 
@@ -6,11 +7,7 @@ NUM_POINTS = 500_000_000
 BLOCK_SIZE = 1024
 GRID_SIZE = (NUM_POINTS + BLOCK_SIZE - 1) // BLOCK_SIZE
 
-# Load compiled PTX
-with open("monte_carlo_pi.ptx", "r") as f:
-    ptx_code = f.read()
-
-mod = cuda.module_from_buffer(ptx_code.encode())
+mod = cuda.module_from_file("monte_carlo_pi.ptx")
 monte_carlo_pi = mod.get_function("monte_carlo_pi")
 
 results_gpu = cuda.mem_alloc(NUM_POINTS * np.int32().nbytes)
