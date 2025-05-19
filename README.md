@@ -58,45 +58,4 @@ MIT – see [LICENSE](./LICENSE)
 
 ## Author
 
-Your Name – [@emcrald](https://github.com/emcrald)
-
-````
-
----
-
-### 📄 `.gitignore`
-
-```gitignore
-# Python
-__pycache__/
-*.pyc
-.venv/
-.env
-*.pyo
-*.pyd
-
-# VS Code
-.vscode/
-
-# OS
-.DS_Store
-Thumbs.db
-````
-
----
-
-### 📄 `LICENSE`
-
-```text
-MIT License
-
-Copyright (c) 2025 Your Name
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction...
-
-[Standard MIT license text continues here, or copy from https://opensource.org/licenses/MIT]
-```
-
----
+Emerald – [@emcrald](https://github.com/emcrald)
