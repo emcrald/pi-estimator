@@ -4,7 +4,7 @@ This project uses CUDA and PyCUDA to estimate the value of π using the Monte Ca
 
 ## Features
 
-- Utilizes PyCUDA for GPU acceleration.
+- Utilises PyCUDA for GPU acceleration.
 - Estimates π with hundreds of millions of points in under 10 seconds.
 - Demonstrates use of CURAND on the GPU.
 
@@ -20,7 +20,7 @@ This project uses CUDA and PyCUDA to estimate the value of π using the Monte Ca
 1. Clone the repo:
 
 ```bash
-git clone https://github.com/your-username/pi-calculator.git
+git clone https://github.com/emcrald/pi-calculator.git
 cd pi-calculator
 ````
 
